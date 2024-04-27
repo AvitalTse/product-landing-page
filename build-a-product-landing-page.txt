@@ -1,0 +1,239 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/1166b0c206.js" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+    <header id="header">
+      <img id="header-img" width="15%" height="100%" src="https://img.freepik.com/free-vector/linear-flat-laptop-logo-template_23-2149000887.jpg?w=826&t=st=1714107363~exp=1714107963~hmac=4ffbe7e1bc732180e0d02469e308fb57514cc800489f80c98e85624cd1a76e49" alt="computer logo"></img>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how-it-works">How It Works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+      </header>
+      <main>
+        <h2>Renewed, home-made Computers</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="Enter your email address"></input>
+        <br>
+        <input id="submit" type="submit" value="Get Started!"></input>
+      </form>
+      <section id="features">
+        <div class="grid"><div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <div class="desc"><h1>Fast Shipping</h1><p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p></div></div>
+        <div class="grid"><div class="icon"><i class="fa-solid fa-check"></i></div>
+        <div class="desc"><h1>Quality Assurance
+</h1><p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p></div></div>
+<div class="grid"><div class="icon"><i class="fa-solid fa-star"></i></div><div class="desc"><h1>Premium Materials
+</h1><p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p></div></div>
+      </section>
+      <section id="how-it-works">
+        <iframe id="video" 
+src="https://www.youtube.com/embed/OAx_6-wdslM?si=OQWGSbHxa5WDxDRa">
+</iframe>
+      </section>
+      <section id="pricing">
+        <div class="container">
+          <div class="p1">
+            <h3>Laptop</h3>
+            <h2>$600</h2>
+            <p>Lorem ipsum.
+Lorem ipsum.
+Lorem ipsum dolor.
+Lorem ipsum.</p>
+          </div>
+          <div class="p2"><h3>MacBook</h3>
+          <h2>$900</h2>
+          <p>Lorem ipsum.
+Lorem ipsum.
+Lorem ipsum dolor.
+Lorem ipsum.</p></div>
+          <div class="p3"><h3>Desktop</h3><h2>$1200</h2><p>Lorem ipsum.
+Lorem ipsum.
+Lorem ipsum dolor.
+Lorem ipsum.</p></div>
+          </div>
+      </section>
+      </main>
+      <footer>
+        <p>Copyright 2016, Original Computers</p>
+      </footer>
+  </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin:0;
+}
+
+#header{
+  display:flex;justify-content:space-between;
+  width:100%;
+  height:12%;
+  position:fixed;
+  background-color:white;
+}
+
+
+#nav-bar{
+  padding:30px;
+}
+.nav-link{
+  color:black;
+  margin:0 4rem;
+  font-size:1.0rem;
+  text-decoration:none;
+}
+
+main{
+  padding:8rem 0;
+  text-align:center;
+}
+
+#email{
+  width:15rem;
+  height:2rem;
+  text-align:center;
+}
+
+#submit{
+  margin:1rem 0;
+  width:8rem;
+  height:2rem;
+  font-size:1.2rem;
+  background-color:#5F9EA0;
+  border:none;
+  color:white;
+}
+
+#submit:hover{
+  color:#5F9EA0;
+  background-color:white;
+}
+
+i{
+  color:#5F9EA0;
+  font-size:5rem;
+}
+
+.grid{
+  display:grid;
+  padding:3rem;
+  grid-template-areas:'icon desc';
+  gap:0;
+  width:50%;
+  text-align:left;
+}
+
+.icon{
+  margin:none;
+  grid-area:icon;
+}
+
+.desc{
+grid-area:desc;
+}
+
+#video{
+  width:50%;
+  height:50%;
+  margin:3rem;
+}
+
+#features{
+  justify-content:center;
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+}
+
+
+
+p{
+  margin:5px;
+}
+
+h1{
+  margin:5px;
+}
+
+#pricing{
+  display:flex;
+  justify-content:center;
+}
+
+.container{
+  display:grid;
+  grid-template-areas:'p1 p2 p3';
+}
+
+.p1{
+  grid-area:p1;
+}
+.p2{
+  grid-area:p2;
+}
+.p3{
+  grid-area:p3;
+}
+
+.p1, .p2, .p3{
+  margin:1rem;
+  width:20rem;
+  height:22rem;
+  border:3px solid black;
+  text-align:center;
+}
+
+h3{
+  background-color:#DCDCDC;
+  margin:0;
+  padding:1rem;
+}
+
+h2{
+  font-weight:bold;
+}
+
+.p1 p, .p2 p, .p3 p{
+height:100%;
+word-spacing:10px;
+margin:0 4rem;
+line-height: 1.8;
+font-size:1.2rem;
+}
+
+footer{
+  background-color:#DCDCDC;
+  height:10%;
+  width:100%;
+  margin:0;
+  text-align:right;
+  }
+
+  @media only screen and (max-width:1000px){
+    .p1, .p2, .p3{
+  width:90%;
+  overflow-y:auto;
+    }
+    .nav-link{
+  margin:0;
+ 
+}
+#header{
+ justify-content:none;
+}
+}
+
+** end of undefined **
+
